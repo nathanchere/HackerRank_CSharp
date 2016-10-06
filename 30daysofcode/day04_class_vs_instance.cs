@@ -1,4 +1,4 @@
-// HackerRank "10 Days of Statistics" - Day 00 - Basic Statistics
+// HackerRank "30 Days of Code" - Day 04 - Class vs Instance
 
 using System;
 using System.Collections.Generic;
