@@ -11,9 +11,23 @@ class Node
     }
 
 }
-class Solution {
+class Solution
+{
 
 // ------[ Solution code begins here ]------------------------------------------
+
+	public static Node insert(Node head, int data)
+	{
+		var result = new Node(data);
+
+		if(head == null) return result;
+
+		Node current = head;
+		while(current.next != null) current = current.next;
+		current.next = result;
+
+		return head;
+	}
 
 // ------[ Solution code ends here ]--------------------------------------------
 
