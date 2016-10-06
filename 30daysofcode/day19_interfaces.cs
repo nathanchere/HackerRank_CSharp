@@ -8,6 +8,21 @@ public interface AdvancedArithmetic
 
 // ------[ Solution code begins here ]------------------------------------------
 
+public class Calculator : AdvancedArithmetic
+{
+  public int divisorSum(int n)
+  {
+    if(n <= 1) return n;
+
+    var result = n + 1;
+    for (int i = 2; i < n; i++)
+    {
+      if (n % i == 0) result += i;
+    }
+    return result;
+  }
+}
+
 // ------[ Solution code ends here ]--------------------------------------------
 
 class Solution
